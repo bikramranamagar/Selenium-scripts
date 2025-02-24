@@ -1,12 +1,12 @@
 import requests
 import json
 
-api = "https://reqres.in/api/users"
+api = "https://reqres.in/api/users?per_page=7"
 
 authorization_token = "token ....any _token"
 
 def get_request():
-    url = api 
+    url = api
     headers = {"Authorization": authorization_token}
     response = requests.get(url, headers=headers)
     assert response.status_code==200
