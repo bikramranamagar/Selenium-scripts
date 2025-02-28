@@ -10,7 +10,7 @@ driver.get(url)
 
 # Close the browser after a short delay
 driver.maximize_window()
-time.sleep(5)
+time.sleep(5 )
 username=driver.find_element(By.ID, "user-name")
 password=driver.find_element(By.ID, "password")
 login=driver.find_element(By.ID, "login-button")
